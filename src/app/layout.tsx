@@ -5,8 +5,9 @@ import { Navbar } from "@/components/web/Navbar";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "next-themes";
+import { Button, buttonVariants } from "@/components/ui/button";
 
-const inter = Inter({subsets:['latin'],variable:'--font-sans'});
+const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,13 +33,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col">
         <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
           <main className="max-w-7xl mx-auto w-full px-4 md:px-6 lg:px-8">
-            <Navbar />
             {children}
           </main>
         </ThemeProvider>
