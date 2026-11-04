@@ -5,6 +5,7 @@ import { Navbar } from "@/components/web/Navbar";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "next-themes";
+import { Button, buttonVariants } from "@/components/ui/button";
 
 /** 正文字体变量，供 Tailwind `--font-sans` 使用 */
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
