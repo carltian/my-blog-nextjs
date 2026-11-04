@@ -1,10 +1,11 @@
+"use client";
 import { Navbar } from "@/components/web/Navbar";
-import { Children } from "react";
 
-export default function SharedLayout({children} : {children: React.ReactNode}) {
-    return (
+export default function SharedLayout({ children }: { children: React.ReactNode }) {
+  return (
     <div>
-    <Navbar />
-    {children}
+      <Navbar />
+      {children}
     </div>
-)}
+  );
+}
